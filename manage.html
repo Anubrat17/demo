@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="manage.css">
+</head>
+<body>
+    <h1 align="center"><font color="white"><u>Scheduling Status</u></font></h1>
+
+    <div class="main-container">
+        <div class="block container">
+            <h2>Crew Information:</h2>
+            <h4>Search for crew</h4>
+            <p>Crew Id: <input type="text" id="crew-id" name="crew-id"></p>
+            <p>Crew Name: <input type="text" id="crew-name" name="crew-name"></p>
+            <p>Contact Number: <input type="text" id="contact-number" name="contact-number"></p>
+            <p>Current Status: 
+                <select id="current-status" name="current-status">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </p>
+  
+            <p>Bus Assigned: <input type="text" id="bus-assigned" name="bus-assigned"></p>
+            <p>Next Assignment: <input type="text" id="next-assignment" name="next-assignment"></p>
+
+        </div>
+
+        <div class="block container">
+            <h2>Bus Information:</h2>
+            <h4>Bus Number: 1</h4>
+            <p>VIN (Vehicle Identification Number): <input type="text" id="vin" name="vin"></p>
+            <p>Current Status: 
+                <select id="bus-current-status" name="bus-current-status">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Under Maintenance">Under Maintenance</option>
+                </select>
+            </p>
+
+            <p>Location: <input type="text" id="location" name="location"></p>
+            <p>Shift Details:</p>
+            <table>
+                <tr>
+                    <td>Start Time: <input type="text" id="start-time" name="start-time"></td>
+                    <td>End Time: <input type="text" id="end-time" name="end-time"></td>
+                    <td>Shift Duration: <input type="text" id="shift-duration" name="shift-duration"></td>
+                </tr>
+            </table>
+            <h4>Bus Number: 2</h4>
+            <p>Current Status: 
+                <select id="bus-2-current-status" name="bus-2-current-status">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Under Maintenance">Under Maintenance</option>
+                </select>
+            </p>
+  
+            <h4>Bus Number: 3</h4>
+            <p>Current Status: 
+                <select id="bus-3-current-status" name="bus-3-current-status">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Under Maintenance">Under Maintenance</option>
+                </select>
+            </p>
+            <h4>Bus Number: 4</h4>
+            <p>Current Status: 
+                <select id="bus-4-current-status" name="bus-4-current-status">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Under Maintenance">Under Maintenance</option>
+                </select>
+            </p>
+        </div>
+</div>
+</body>
+</html>
+

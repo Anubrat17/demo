@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew Details and Map</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="crew_detail.css">
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-md-4 h-100">
+                <div class="card h-100">
+                    <h2 class="card-title">Crew Details</h2>
+                    <div class="form-group mb-3">
+                        <label>Status:</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="status" id="active" autocomplete="off" checked> Active
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="status" id="inactive" autocomplete="off"> Inactive
+                            </label>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="crewName">Crew Name:</label>
+                            <input type="text" class="form-control" id="crewName" value="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="busId">Bus ID:</label>
+                            <input type="text" class="form-control" id="busId" value="BUS-1234">
+                        </div>
+                        <div class="form-group">
+                            <label for="busNo">Bus No:</label>
+                            <input type="text" class="form-control" id="busNo" value="1234">
+                        </div>
+                        <div class="form-group">
+                            <label for="path">Path:</label>
+                            <input type="text" class="form-control" id="path" value="Route 1 -> Route 2 -> Route 3">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8 h-100">
+                <div class="card h-100">
+                    <h2 class="card-title">Crew Route</h2>
+                    <img id="map-image" src="map.png" alt="Map Image" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
+</body>
+</html>
